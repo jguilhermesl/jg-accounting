@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600&family=Josefin+Slab:ital,wght@0,100;0,200;0,300;1,100;1,200&family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;1,100;1,200;1,400&family=Mulish:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <title>JGSmile</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="hamburguer" id="hamburguer" onclick="sidebar()">
+            <div class="line" id="line1"></div>
+            <div class="line" id="line2"></div>
+            <div class="line" id="line3"></div>
+        </div>
+        <header id="home">
+            <div class="img-fundo">
+                <img src="./imagens/contabilidade3.jpg" alt="">
+            </div>
+            <div class="titulo-principal" id="titulo-principal">
+                <h1>JG Contabilidade</h1>
+                <p>A melhor há 10 anos!</p>
+                <button type="button" onclick="aparecerForm()" id="botao-contato">Contate-nos</button>
+            </div>
+            <form action="https://formsubmit.co/formjgsl@gmail.com" id="formulario-home" class="formulario-home" method="POST">
+                <h3 class="titulo-formulario">Entre em contato</h3>
+                <label for="">
+                    Nome
+                    <input type="text" name="name" placeholder="Digite seu nome" required>
+                </label>
+                <label for="">
+                    E-mail
+                    <input type="email" name="email" placeholder="Digite seu email" required>
+                </label>
+                <label for="">
+                    Numero
+                    <input type="number" name="numero" id="" placeholder="Digite seu número" required>
+                </label>
+                <label for="">
+                    Fale conosco
+                    <textarea name="mensagem" placeholder="Deixe uma mensagem" id=""></textarea>
+                </label>
+                <input type="hidden" name="_captcha" value="false">
+                <button type="submit" id="botao-form">Enviar</button>
+            </form>
+
+        </header>
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="#servicos" class="menu-link">Nossos serviços</a></li>
+                    <li class="menu-item"><a href="#sobre-nos" class="menu-link">Sobre Nós </a></li>
+                </ul>
+            </nav>
+            <div class="social-media">
+                <a href="#"> <i class="fab fa-facebook-f"> </i></a>
+                <a href="#"> <i class="fab fa-whatsapp"> </i></a>
+                <a href="#"> <i class="fab fa-instagram"> </i></a>
+
+            </div>
+        </aside>
+        <section class="servicos" id="servicos">
+            <div class="header-servicos">
+                <h1>Nossos serviços</h1>
+            </div>
+            <div class="caixas-servicos">
+                <div class="box-servico">
+                    <h2>BÁSICO</h2>
+                    <p>100 R$</p>
+                    <ul>
+                        <li><a href="">• Serviço 1</a></li>
+                        <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+                        <li><a href="">• Serviço 2</a></li>
+                        <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+                        <li><a href="">• Serviço 3</a></li>
+                        <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+                    </ul>
+                </div>
+                <div class="box-servico">
+                    <h2>VIP</h2>
+                    <p>200 R$</p>
+                    <ul>
+                        <li><a href="">• Serviço 1</a></li>
+                        <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+                        <li><a href="">• Serviço 2</a></li>
+                        <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+                        <li><a href="">• Serviço 3</a></li>
+                        <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+                    </ul>
+                </div>
+                <div class="box-servico">
+                    <h2>AVANÇADO</h2>
+                    <p>300 R$</p>
+                    <ul>
+                        <li><a href="">• Serviço 1</a></li>
+                        <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+                        <li><a href="">• Serviço 2</a></li>
+                        <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+                        <li><a href="">• Serviço 3</a></li>
+                        <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="sobre-nos" id="sobre-nos">
+            <div class="header-sobre-nos">
+                <h1>Sobre Nós</h1>
+
+            </div>
+            <div class="container-sobre-nos">
+                <h2>Somos um  escritório moderno, versátil e dinâmico, cujo objetivo é levar soluções criativas e eficazes aos clientes, tendo como sócios o Dr. Fulano e a Dra. Fulana, profissionais multidisciplinares com sólida formação e vasta experiência em questões de grande complexidade.                
+                </h2>
+                <br>
+                <h2> JG Contabilidade é um escritório que preza pela qualidade dos serviços contáveis, com amplo conhecimento e experiência de atuação. Contamos com uma equipe de profissionais experientes para atender nossos clientes de forma personalizada, contemplando as diversas áreas da Contabilidade.</h2>
+                <br>
+                <h2> Nosso escritório está comprometido em ter os melhores profissionais, colaboradores e parceiros, empenhados em oferecer seus serviços com grande sensibilidade e comprometimento, com a mais alta competência e comunicação com os clientes.</h2>
+                <br>
+
+            </div>
+        </section>
+        <footer>
+            <div class="footer-content">
+                <p>
+                    Copyright &copy; 2021, JGSL - Todos os direitos reservados
+                </p>
+                <div class="social-list">
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <a href="#home" id="link-topo">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </div>
+
+</body>
+
+</html>
